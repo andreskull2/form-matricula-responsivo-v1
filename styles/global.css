@@ -7,7 +7,7 @@
 :root {
     --font-family: 'Poppins', sans-serif;
     --text: 400 1rem/1.5 var(--font-family);
-    --text-sm: 400 .875rem/1.4 var(--font-family);
+    --text-sm: 400 0.875rem/1.4 var(--font-family);
 
     --text-primary: #292524;
     --text-secondary: #57534E;
@@ -16,6 +16,7 @@
 
     --surface-primary: #FFFFFF;
     --surface-secondary: #FEE7D6;
+    --surface-disabled: #E7E5E4;
 
     --stroke-default: #D6D3D1;
     --stroke-highlight: #F3541C;
@@ -38,3 +39,14 @@ img {
     height: auto;
 }
 
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
