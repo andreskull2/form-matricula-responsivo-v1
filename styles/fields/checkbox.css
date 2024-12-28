@@ -2,7 +2,8 @@
     margin-top: 3rem;
     display: flex;
     gap: 0.75rem;
-    align-items: flex-start;
+    align-items: center; /* Alinha o texto e o checkbox verticalmente */
+    line-height: 1.5;
 }
 
 .terms-wrapper strong {
@@ -12,18 +13,27 @@
 
 .checkbox-wrapper {
     position: relative;
+    margin: 0; /* Remove sobras externas */
+    padding: 0; /* Remove sobras internas */
+    margin-top: 3rem;
 }
 
 .checkbox-wrapper [type="checkbox"] {
     all: unset;
     position: absolute;
     inset: 0;
+    width: 1.5rem; /* Define dimensões */
+    height: 1.5rem;
 }
 
 .checkbox-wrapper .checkbox-image {
     flex: 0 0 1.5rem;
+    width: 1.5rem; /* Certifique-se de definir largura */
     height: 1.5rem;
     background-image: url(../../assets/icons/checkbox-default.svg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 
 .checkbox-wrapper:hover .checkbox-image,
