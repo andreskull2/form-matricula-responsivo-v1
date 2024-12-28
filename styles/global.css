@@ -50,3 +50,9 @@ img {
 .flex-2 {
     flex: 2;
 }
+
+@media (max-width: 48rem) {
+    .heading2 {
+        font-size: 1.25rem;
+    }
+}

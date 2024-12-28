@@ -27,24 +27,16 @@ main h1 {
     margin-bottom: .5rem;
 }
 
-aside {
-    background-color: var(--surface-secondary);
-    padding: 4rem;
-}
+@media (max-width: 48em) {
+    #app {
+        display: flex;
+        flex-direction: column-reverse;
+        overflow-y: auto;
+    }
 
-aside .aside-container {
-    max-width: 31rem;
-}
-
-aside .aside-container > img {
-    margin-top: 2rem;
-}
-
-aside h2 {
-    font: 600 2.5rem/1.25 var(--font-family);
-    margin-bottom: .5rem;
-}
-
-aside h2 span {
-    color: var(--text-highlight);
+    main {
+        overflow: initial;
+        margin-inline: auto;
+        padding: 1.5rem;
+    }
 }

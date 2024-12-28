@@ -1,0 +1,45 @@
+aside {
+    background-color: var(--surface-secondary);
+    padding: 4rem;
+}
+
+aside .aside-container {
+    max-width: 31rem;
+}
+
+aside .aside-container > img {
+    margin-top: 2rem;
+}
+
+aside h2 {
+    font: 600 2.5rem/1.25 var(--font-family);
+    margin-bottom: .5rem;
+}
+
+aside h2 span {
+    color: var(--text-highlight);
+}
+
+@media (max-width: 48em) {
+    aside {
+        padding: 1.5rem;
+    }
+   
+    .aside-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aside-container > img {
+        margin-bottom: 0.75rem;
+    }
+
+    .aside-container {
+        margin-inline: auto;
+    }
+
+    header {
+        display: none;
+    }
+}
